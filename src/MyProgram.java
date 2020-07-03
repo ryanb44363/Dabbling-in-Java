@@ -27,6 +27,7 @@ public class MyProgram {
 	// Primitive Typed Data - 
 	// Object - Instance of a class (class of the data type).
 	// Declaring variables in the right places saves time and prevents confusion.
+	// Precedence - Order Evaluated.
 	//----------------------------------------------------------------------
 
 //  Static basically allows you to run the {} without calling it.
@@ -46,6 +47,7 @@ public class MyProgram {
 		MyProgram.datatypes();
 		MyProgram.ScannerDetails();
 		MyProgram.Morenumbers();
+		MyProgram.StringWork(args);
 	}
 	
 	public String x = new String(); // This is a property.
@@ -152,6 +154,47 @@ public class MyProgram {
 		System.out.println("Dividing with integers: " + c);
 		System.out.println("Dividing with doubles: " + b);
 		
+		// Increasing and Decreasing Variable Values:
+		
+		int x = 5;
+		x++; // Command to add.
+		System.out.print(x);
+		x--; // Comment to subtract.
+		System.out.print(x);
+		
 	}
 	
+	public static void NumericMethods(String[] args) {
+		int x = 10;
+		int y = 20;
+		Integer.max(x,y); // Gives you the larger of the two.
+		
+		Integer.compare(x,y); // Gives you the larger of the two.
+		
+		// System.out.println(Integer.max(x,y)); or System.out.println(Integer.compare(x,y));
+		
+		String money = "300";
+		
+		System.out.println(Integer.valueOf(money));
+		
+		System.out.println(Integer.parseInt(money));
+		
+		Integer a = Integer.valueOf(money);
+		
+		int b = Integer.parseInt(money);
+		
+		Double.parseDouble(money);
+		
+		// Most data types and their usage are very similar to INT.
+	}
+	
+	public static void StringWork(String[] args) {
+		String x2 = "hello"; // Object, an instance of a class.
+		x2.charAt(1); // Returns the first letter of that word.
+		
+		x2.length(); // Length of the string x2.
+		
+		
+		
+	}
 }
